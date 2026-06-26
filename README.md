@@ -1,16 +1,15 @@
-# USDTBot
-import logging
+
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     Application, CommandHandler, CallbackQueryHandler,
     MessageHandler, filters, ContextTypes
 )
 
-# ضع التوكن الجديد هنا بعد ما تغيره من BotFather
-TOKEN = "ضع_التوكن_الجديد_هنا"
+# توكن البوت من BotFather
+TOKEN = "8968281044:AAExNF3BeWNu6SE8-N21j-sM_QXxa2zcO18"
 
 # رقم حسابك في تيليغرام (لاستقبال إشعارات الطلبات)
-ADMIN_ID = 123456789  # غيّر هذا برقمك
+ADMIN_ID = 1960975949
 
 # السعر اليومي — غيّره كل يوم
 PRICE_BUY = 29  # سعر البيع للعميل
@@ -71,7 +70,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         keyboard = [[InlineKeyboardButton("🔙 رجوع", callback_data="back")]]
         await query.edit_message_text(
             "📩 *تواصل مع المشرف:*\n\n"
-            "👤 @اسم_حسابك_هنا\n\n"  # غيّر هذا
+            "👤 @Oussamabenyahia\n\n"
             "⏰ أوقات العمل: 8 صباحاً - 10 مساءً\n"
             "⚡ متوسط وقت الرد: أقل من 10 دقائق",
             parse_mode="Markdown",
