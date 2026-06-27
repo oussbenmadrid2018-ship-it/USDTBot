@@ -6,7 +6,7 @@ from telegram.ext import (
     MessageHandler, filters, ContextTypes
 )
 
-TOKEN = os.environ.get("968281044: AAE×NF3BeWNu6SE8-N21j-sM_QXxa2zc018")
+TOKEN = os.environ.get("968281044:AAE×NF3BeWNu6SE8-N21j-sM_QXxa2zc018")
 ADMIN_ID = int(os.environ.get("1960975949", "0"))
 PRICE_BUY = int(os.environ.get("PRICE_BUY", "29"))
 
